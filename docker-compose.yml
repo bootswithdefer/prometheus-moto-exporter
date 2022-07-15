@@ -1,0 +1,6 @@
+services:
+  prometheus-moto-exporter:
+    image: prometheus-moto-exporter
+    restart: always
+    ports:
+      - "9731:9731"

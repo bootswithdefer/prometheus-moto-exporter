@@ -45,7 +45,7 @@ func App() *cobra.Command {
 	}
 	cmd.AddCommand(NewCheckCommand())
 
-	cmd.Flags().StringVar(&bindAddr, "bind", "127.0.0.1:9731", "http server bind address")
+	cmd.Flags().StringVar(&bindAddr, "bind", "0.0.0.0:9731", "http server bind address")
 
 	cmd.PersistentFlags().StringVar(&endpoint, "endpoint", "https://192.168.100.1/HNAP1/", "modem HNAP endpoint")
 	cmd.PersistentFlags().StringVar(&username, "username", "admin", "modem HNAP username")
